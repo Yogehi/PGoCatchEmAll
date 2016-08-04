@@ -8,17 +8,17 @@ Note that while this module focuses on altering a user’s throw attempt, the �
 ### Description on how Pokemon Go communicates via serialized data
 Pokemon Go communicates with the web server https://pgorelease.nianticlabs.com. The game uses Google’s Protobuf (https://github.com/google/protobuf) format to serialize the data when the client and server are sending/receiving data. A sample request which involves trying to catch a Nidoran♀ would look something like this:
 
-<image1>
+![alt text](https://github.com/Yogehi/PGoCatchEmAll/blob/master/Images/image1.png)
 
 Putting this data through both a hex editor and a protobuf plugin available for Bupsuite would show the following:
 
-<image2>
-<image3>
+![alt text](https://github.com/Yogehi/PGoCatchEmAll/blob/master/Images/image2.png)
+![alt text](https://github.com/Yogehi/PGoCatchEmAll/blob/master/Images/image3.png)
 
 Thanks to POGOProtos (https://github.com/AeonLucid/POGOProtos) we can start to decode information about this specific request. Since “PGo Catch Em All” focuses on altering the catch attempts by the player and the example request is attempting to catch a Nidoran♀, we will only decode that portion of this request.
 Lets break this down!
 
-<image4>
+![alt text](https://github.com/Yogehi/PGoCatchEmAll/blob/master/Images/request.png)
 
 Changes are as followed:
 
@@ -58,7 +58,7 @@ Another bonus of 10 experience points is given if the Pokeball curves during the
 
 If we wanted to throw a ball that would yield an “Excellent” throw as well as the “Curve Ball” bonus, the request would look something like this:
 
-<image 5>
+![alt text](https://github.com/Yogehi/PGoCatchEmAll/blob/master/Images/request2.png)
 
 Changes are as followed:
 
