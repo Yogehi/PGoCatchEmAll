@@ -1,5 +1,5 @@
-# PGoCatchEmAll
-# NOTE: THIS TOOL DOES NOT WORK AS OF AUGUST 3, 2016!
+# PGoCatchEmAll - Xposed module to guarantee an "Excellent" and "Curve Ball" bonus
+# NOTE: THIS MODULE DOES NOT WORK AS OF AUGUST 3, 2016!
 
 XPosed module that until August 3, 2016, guaranteed all versions of Pokemon Go to always receive the "Excellent" and "Curve Ball" bonus EXP as long as you hit the Pokemon. This module hooks onto the "doSyncRequest" method in "Pokemon Go" to read all data the game was about to send and then modifying that data. I'm publishing this tool for archival purposes.
 
