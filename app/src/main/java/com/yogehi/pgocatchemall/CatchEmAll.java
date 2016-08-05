@@ -75,8 +75,8 @@ public class CatchEmAll implements IXposedHookLoadPackage {
                     String cutHexRest = bufHex.substring(weirdPlaceHolder);
 
                     /** replaces reticle size to super small size, makes your spin modifier to max and hit position is center **/
-                    String newWorkHex2 = cutWorkString.replaceAll("19(.*?)22", "190000008094BEEE3F22");
-                    /**String newWorkHex2 = newWorkHex1.replaceAll("2801(.*?)2202", "280131333333333333EB3F39000000000000F03F2202"); **/
+                    String newWorkHex1 = cutWorkString.replaceAll("19(.*?)22", "190000008094BEEE3F22");
+                    String newWorkHex2 = newWorkHex1.replaceAll("2801(.*?)2202", "280131333333333333EB3F39000000000000F03F2202");
 
                     /** time to rebuild everything i broke down! **/
                     /** first, find the length of the specific throw information **/
